@@ -3,12 +3,22 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .boxes {
+    justify-content: initial;
+    align-items: initial;
+  }
 }
 
 // Desktops & Laptops
 @include mediaLg {
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .boxes {
+    justify-content: initial;
+    align-items: initial;
   }
 }
 
