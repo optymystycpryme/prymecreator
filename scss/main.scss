@@ -74,6 +74,14 @@ main {
   }
 }
 
+// Secondary Background Image
+.secondary-img {
+  background: url("../img/secondary-background.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 // About Page
 .about-info {
   display: grid;
@@ -113,7 +121,7 @@ main {
   }
 
   .job {
-    background: lighten($primary-color, 5);
+    background: darken($primary-color, 8);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
@@ -128,11 +136,34 @@ main {
   img {
     width: 100%;
     border: #fff solid 1px;
+    z-index: 0;
 
     &:hover {
       opacity: 0.8;
       border-color: $secondary-color;
       @include easeOut;
+    }
+  }
+
+  .project-item-header {
+    background: rgba($color: #000000, $alpha: 0.7);
+    padding: 5px;
+    border: solid 1px #fff;
+    height: 100%;
+
+    h3 {
+      text-align: center;
+      height: 20%;
+    }
+
+    p {
+      padding-left: 10px;
+      min-height: 10%;
+      height: 70%;
+    }
+
+    .tech-used-text {
+      color: $secondary-color;
     }
   }
 }
