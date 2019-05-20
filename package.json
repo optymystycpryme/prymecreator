@@ -11,6 +11,7 @@
   "author": "Brian Haltom",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   }

@@ -65,7 +65,7 @@
       border: solid 3px #66ffff;
       transition-duration: 2s; }
       .menu-branding .portrait:hover {
-        transform: rotate(270deg); }
+        transform: rotate(1440deg); }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -120,7 +120,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(34, 34, 34, 0.6); }
+      background: rgba(34, 34, 34, 0.4); }
 
 h1,
 h2,
@@ -138,6 +138,15 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(39, 39, 39, 0.5); }
 
+@keyframes slideInSmHeading {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0); } }
+
+.sm-heading {
+  animation: 2.3s ease-out 0s 1 slideInSmHeading; }
+
 .home {
   margin-top: -150px; }
 
@@ -153,45 +162,114 @@ header {
 .text-secondary {
   color: #66ffff; }
 
+@keyframes rotateMenuBtn {
+  0% {
+    transform: translateY(-100%) rotate(720deg); }
+  100% {
+    transform: translateX(0); } }
+
+.menu-btn {
+  animation: 1s ease-out 0s 1 rotateMenuBtn; }
+
+@keyframes rotatePryme {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0); } }
+
+#text-pryme {
+  display: inline-block;
+  animation: 1s ease-out 0s 1 rotatePryme; }
+
+@keyframes rotateMedia {
+  0% {
+    transform: translateY(-100%) rotate(90deg); }
+  100% {
+    transform: translateX(0); } }
+
 #text-media {
+  display: inline-block;
+  animation: 1.5s ease-out 0s 1 rotateMedia; }
+
+@keyframes rotateAnd {
+  0% {
+    transform: translateY(100%) rotate(1440deg); }
+  100% {
+    transform: translateX(0); } }
+
+#text-and {
+  display: inline-block;
+  animation: 1s ease-out 0s 1 rotateAnd; }
+
+@keyframes rotateCreation {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0) rotateZ(-90deg); } }
+
+@keyframes rotateE {
+  0% {
+    transform: translateX(-70%) rotate(360deg); }
+  100% {
+    transform: translateX(0); } }
+
+#text-creation {
   font-family: 'Fjalla One', sans-serif;
   margin-left: -200px;
   padding-left: 236px;
   color: #66ffff;
   display: inline-block;
   transition-duration: 1s;
-  transform: rotateZ(-90deg); }
-  #text-media #e {
-    display: inline-block;
-    transition-duration: 2s;
-    transform: rotate(-360deg); }
+  transform: rotateZ(-90deg);
+  animation: 2s ease-out 0s 1 rotateCreation; }
+
+#e {
+  display: inline-block;
+  animation: 2s ease-out 0s 1 rotateE; }
 
 main {
   padding: 4rem;
+  height: 100%;
   min-height: calc(100vh - 60px); }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    font-size: 1.4rem; }
     main .icons a {
       color: #fff;
-      padding: 0.4rem; }
+      padding: 0.8rem; }
       main .icons a:hover {
         color: #66ffff;
         transition: all 0.5s ease-out; }
   main#home {
-    overflow: hidden; }
+    overflow: auto; }
     main#home h1 {
       margin-top: 20vh; }
-  main .second-div {
-    height: 400px; }
 
 .back-link:hover {
   color: #66ffff; }
+
+@keyframes homepageParagraph {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0); } }
+
+.homepage-paragraph {
+  color: #fff;
+  background: rgba(26, 26, 26, 0.4);
+  border-radius: 10px;
+  padding: 5px 25px 5px 25px;
+  box-shadow: 0 4px 8px 4px #66ffff;
+  animation: 2.5s ease-out 0s 1 homepageParagraph; }
 
 .secondary-img {
   background: url(../img/background2.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover; }
+
+.work-link {
+  color: #66ffff; }
 
 .about-info {
   display: grid;
@@ -201,8 +279,6 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info #work-link {
-    color: #66ffff; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -226,6 +302,9 @@ main {
         text-decoration: underline;
         text-decoration-style: double;
         text-decoration-color: #000; }
+
+.text-secondary {
+  color: #66ffff !important; }
 
 .projects {
   display: grid;
@@ -251,8 +330,16 @@ main {
       padding-left: 10px;
       min-height: 10%;
       height: 70%; }
-    .projects .project-item-header .tech-used-text {
-      color: #66ffff; }
+  .projects .card {
+    background: rgba(34, 34, 34, 0.5);
+    border: 1px #fff solid;
+    border-radius: 0px; }
+  .projects .card-img-top {
+    border: none; }
+  .projects .card-title, .projects .card-text {
+    color: #fff; }
+  .projects .tech-used-text {
+    color: #66ffff !important; }
 
 .boxes {
   display: flex;
@@ -283,8 +370,9 @@ main {
   margin-bottom: 0.3rem;
   transition: all 0.5s ease-out; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    padding: 0.8rem;
+    padding: 0.6rem;
     border-radius: 10px;
+    border: solid 2px #00cccc;
     background: #66ffff;
     color: #000; }
 
@@ -292,7 +380,8 @@ main {
   background: black; }
 
 .btn-light {
-  background: #a2a2a2;
+  border: solid 1px #000;
+  background: #f2f2f2;
   color: #333; }
 
 #main-footer {
@@ -315,8 +404,13 @@ main {
   .boxes {
     justify-content: initial;
     align-items: initial; }
-  #text-media {
-    transform: rotate(0deg); } }
+  #text-creation {
+    transform: rotate(0deg); }
+  @keyframes rotateCreation {
+    0% {
+      transform: translateX(100%); }
+    100% {
+      transform: translateX(0); } } }
 
 @media screen and (min-width: 501px) and (max-width: 768px) {
   main {
@@ -336,8 +430,13 @@ main {
       width: 200px;
       height: 200px;
       background-size: 250px; }
-  #text-media {
+  #text-creation {
     transform: rotate(0deg); }
+  @keyframes rotateCreation {
+    0% {
+      transform: translateX(100%); }
+    100% {
+      transform: translateX(0); } }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -365,5 +464,10 @@ main {
     margin-right: .5rem; }
   .projects {
     grid-template-columns: 1fr; }
-  #text-media {
-    transform: rotate(0deg); } }
+  #text-creation {
+    transform: rotate(0deg); }
+  @keyframes rotateCreation {
+    0% {
+      transform: translateX(100%); }
+    100% {
+      transform: translateX(0); } } }

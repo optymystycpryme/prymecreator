@@ -20,8 +20,16 @@
     justify-content: initial;
     align-items: initial;
   }
-  #text-media {
+  #text-creation {
     transform: rotate(0deg);
+  }
+  @keyframes rotateCreation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }
 
@@ -53,8 +61,16 @@
       background-size: 250px;
     }
   }
-  #text-media {
+  #text-creation {
     transform: rotate(0deg);
+  }
+  @keyframes rotateCreation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
   ul.menu-nav,
   div.menu-branding {
@@ -103,7 +119,15 @@
   .projects {
     grid-template-columns: 1fr;
   }
-  #text-media {
+  #text-creation {
     transform: rotate(0deg);
+  }
+  @keyframes rotateCreation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }

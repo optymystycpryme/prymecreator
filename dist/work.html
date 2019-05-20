@@ -11,6 +11,8 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   </head>
 
@@ -44,66 +46,82 @@
     <main id="about">
       <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
       <h2 class="sm-heading">
-        Check out some of my projects...
+        Check out these projects...
       </h2>
       <div class="projects">
-        <div class="item">
-          <div class="image">
-            <div class="project-item-header">
-              <h3>Ruby on Rails Portfolio</h3>
-              <hr>
-              <p><span class="tech-used-text">Tech Utilized:</span> Ruby, Rails, ActionCable, Bootstrap 4, SortableJS, CSS,
-                Coffeescript</p>
-            </div>
-            <a href="http://brianhaltom.me"><img src="img/projects/project1.jpg" alt="project" /></a>
+        <div class="card">
+          <img class="card-img-top" src="img/projects/project1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Ruby on Rails Portfolio</h5>
+            <hr>
+            <p class="card-text"><span class="tech-used-text">Tech Utilized:</span> Ruby, Rails, ActionCable, Bootstrap 4, SortableJS, CSS, Coffeescript
+            </p>
+            <a href="http://brianhaltom.me" class="btn-light"><i class="fas fa-eye"></i> Project </a>
+            <a href="https://github.com/optymystycpryme/brians_portfolio" class="btn-dark"><i class="fab fa-github"></i> Github</a>
           </div>
-          <a href="http://brianhaltom.me" class="btn-light"><i class="fas fa-eye"></i> Project </a>
-          <a href="https://github.com/optymystycpryme/brians_portfolio" class="btn-dark"><i class="fab fa-github"></i> Github</a>
         </div>
-        <div class="item">
-          <div class="image">
-            <div class="project-item-header">
-              <h3>Live Messenger Rails 5</h3>
-              <hr>
-              <p><span class="tech-used-text">Tech Utilized:</span> Ruby, Rails, ActionCable, SemanticUI, CSS,
-                Coffeescript</p>
-            </div>
-            <a href="https://mme-chat.herokuapp.com/"><img src="img/projects/project2.jpg" alt="project" /></a>
+        <div class="card">
+          <img class="card-img-top" src="img/projects/project2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Live Messenger Rails 5</h5>
+            <hr>
+            <p class="card-text"><span class="tech-used-text">Tech Utilized:</span> Ruby, Rails, ActionCable, SemanticUI, CSS, Coffeescript
+            </p>
+            <a href="https://mme-chat.herokuapp.com/" class="btn-light"><i class="fas fa-eye"></i> Project </a>
+            <a href="https://github.com/optymystycpryme/live-message-app" class="btn-dark"><i class="fab fa-github"></i>
+              Github</a>
           </div>
-          <a href="https://mme-chat.herokuapp.com/" class="btn-light"><i class="fas fa-eye"></i> Project </a>
-          <a href="https://github.com/optymystycpryme/live-message-app" class="btn-dark"><i class="fab fa-github"></i>
-            Github</a>
         </div>
-        <div class="item">
-          <div class="image">
-            <div class="project-item-header">
-              <h3>Stylts Blog - Blog</h3>
-              <hr>
-              <p><span class="tech-used-text">Tech Utilized:</span> Ruby, Rails, Bootstrap 3, CSS,
-                Coffeescript</p>
-            </div>
-            <a href="http://stylts.com/"><img src="img/projects/project3.jpg" alt="project" /></a>
+        <div class="card">
+          <img class="card-img-top" src="img/projects/project3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Stylts Blog - Blog</h5>
+            <hr>
+            <p class="card-text"><span class="tech-used-text">Tech Utilized:</span> Ruby, Rails, Bootstrap 3, CSS, Coffeescript, ReactJS
+            </p>
+            <a href="http://stylts.com/" class="btn-light"><i class="fas fa-eye"></i> Project </a>
+            <a href="https://github.com/optymystycpryme/stylts-blog" class="btn-dark"><i class="fab fa-github"></i>
+              Github</a>
           </div>
-          <a href="http://stylts.com/" class="btn-light"><i class="fas fa-eye"></i> Project </a>
-          <a href="https://github.com/optymystycpryme/stylts-blog" class="btn-dark"><i class="fab fa-github"></i>
-            Github</a>
         </div>
-        <div class="item">
-          <div class="image">
-            <div class="project-item-header">
-              <h3>This Website</h3>
-              <hr>
-              <p><span class="tech-used-text">Tech Utilized:</span> NodeJS, Javascript, SASS</p>
-            </div>
-            <a href="https://prymecreator.com"><img src="img/projects/project4.jpg" alt="project" /></a>
+        <div class="card">
+          <img class="card-img-top" src="img/projects/project4.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">This Website</h5>
+            <hr>
+            <p class="card-text"><span class="tech-used-text">Tech Utilized:</span> NodeJS, Javascript, SASS, CSS, Bootstrap 4
+            </p>
+            <a href="https://prymecreator.com" class="btn-light"><i class="fas fa-eye"></i> Project </a>
+            <a href="https://github.com/optymystycpryme/responsive-portfolio" class="btn-dark"><i class="fab fa-github"></i>
+              Github</a>
           </div>
-          <a href="https://prymecreator.com" class="btn-light"><i class="fas fa-eye"></i> Project </a>
-          <a href="https://github.com/optymystycpryme/responsive-portfolio" class="btn-dark"><i class="fab fa-github"></i>
-            Github</a>
+        </div>
+        <div class="icons">
+          <a href="https://codepen.io/optymystycpryme/"
+            ><i class="fab fa-codepen fa-2x"></i
+          ></a>
+          <a
+            href="https://www.freecodecamp.org/fcc7e99b0ae-d7a7-4921-afc6-e48cc63a46cc"
+            ><i class="fab fa-free-code-camp fa-2x"></i
+          ></a>
+          <a href="https://github.com/optymystycpryme"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/optymystycpryme/"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
         </div>
       </div>
+      <h4><a href="index.html" class="back-link">
+          << Back to the home page!</a> </h4>
     </main>
     <footer id="main-footer">PrymeCreation &copy; 2019</footer>
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
