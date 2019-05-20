@@ -20,6 +20,9 @@
     justify-content: initial;
     align-items: initial;
   }
+  #text-media {
+    transform: rotate(0deg);
+  }
 }
 
 // Tablets & Small Laptops
@@ -50,7 +53,9 @@
       background-size: 250px;
     }
   }
-
+  #text-media {
+    transform: rotate(0deg);
+  }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -97,5 +102,8 @@
   }
   .projects {
     grid-template-columns: 1fr;
+  }
+  #text-media {
+    transform: rotate(0deg);
   }
 }
